@@ -17,12 +17,13 @@ public class ParseJsonResult {
     private static final String TARGET = "http://v.juhe.cn/joke/randJoke.php";
     private static final int DEF_CONN_TIMEOUT = 30000;
     private static final String DEF_CHARSET = "UTF-8";
-    public static String userAgent =  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36";
-    public static String fetchResult(Map<String,String> params) {
-        return fetchResult(TARGET,params,"GET");
+    public static String userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36";
+
+    public static String fetchResult(Map<String, String> params) {
+        return fetchResult(TARGET, params, "GET");
     }
 
-    private static String fetchResult(String targetUrl, Map<String,String> params, String method) {
+    private static String fetchResult(String targetUrl, Map<String, String> params, String method) {
         String queryUrl = targetUrl + "?" + paramsToString(params);
         String result;
         //append each line and finally as a result
@@ -40,20 +41,19 @@ public class ParseJsonResult {
             connection.setReadTimeout(DEF_CONN_TIMEOUT);
             connection.setRequestMethod(method);
             connection.setUseCaches(false);
-            connection.setRequestProperty("User-agent",userAgent);
+            connection.setRequestProperty("User-agent", userAgent);
             connection.setInstanceFollowRedirects(false);
             connection.connect();
             //read from the url
             in = connection.getInputStream();
-            reader = new BufferedReader(new InputStreamReader(in,DEF_CHARSET));
+            reader = new BufferedReader(new InputStreamReader(in, DEF_CHARSET));
             String aLine;
             while ((aLine = reader.readLine()) != null) {
                 allRead.append(aLine);
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
+        } finally {
             if (reader != null) {
                 try {
                     reader.close();
@@ -61,7 +61,7 @@ public class ParseJsonResult {
                     e.printStackTrace();
                 }
             }
-            if (in != null){
+            if (in != null) {
                 try {
                     in.close();
                 } catch (IOException e) {
@@ -78,7 +78,7 @@ public class ParseJsonResult {
         StringBuilder sb = new StringBuilder();
         for (Map.Entry i : params.entrySet()) {
             try {
-                sb.append(i.getKey()).append("=").append(URLEncoder.encode(i.getValue()+"",DEF_CHARSET)).append("&");
+                sb.append(i.getKey()).append("=").append(URLEncoder.encode(i.getValue() + "", DEF_CHARSET)).append("&");
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }

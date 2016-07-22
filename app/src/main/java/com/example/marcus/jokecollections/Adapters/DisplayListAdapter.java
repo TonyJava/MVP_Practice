@@ -29,7 +29,7 @@ public class DisplayListAdapter extends RecyclerView.Adapter<DisplayListAdapter.
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         context = parent.getContext();
-        View view = LayoutInflater.from(context).inflate(R.layout.display_list_items,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.display_list_items, parent, false);
         MyViewHolder viewHolder = new MyViewHolder(view);
         return viewHolder;
     }
