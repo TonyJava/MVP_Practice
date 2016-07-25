@@ -38,6 +38,7 @@ public class ModelImp implements ModelItf {
                 Gson gson = new Gson();
                 PicJokes jokes = gson.fromJson(result, PicJokes.class);
                 picJokes = jokes.getResult();
+                //通过 Presenter 来返回数据到 View，并通知 View 做出更改
                 presenterItf.returnData(picJokes);
             }
 
@@ -53,6 +54,7 @@ public class ModelImp implements ModelItf {
 
             @Override
             public void onFinished() {
+                //同上注释
                 presenterItf.refreshFinished();
             }
         });
