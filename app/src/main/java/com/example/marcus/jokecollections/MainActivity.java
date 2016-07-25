@@ -24,7 +24,6 @@ import java.util.List;
  * 而此 loadData 又通过 Model 的 solveData 来处理数据，因为 Model 中持有对 Presenter
  * 的一个引用，所以可以在处理完数据后调用 Presenter 中的 returnData 方法来通知 Activity 进行
  * 适配器的更新操作，从而达到了 View 和 Model 老死不相往来的目的，实现了清晰的分层效果
- *
  **/
 
 @ContentView(R.layout.activity_main)

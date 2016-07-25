@@ -9,6 +9,8 @@ import java.util.List;
  */
 public interface PresenterItf {
     void returnData(List<PicJokes.ResultBean> resultBeanList);
+
     void loadData();
+
     void refreshFinished();
 }
