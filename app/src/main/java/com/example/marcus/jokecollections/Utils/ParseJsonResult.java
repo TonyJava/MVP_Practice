@@ -13,6 +13,11 @@ import java.util.Map;
 /**
  * Created by marcus on 16/6/9.
  */
+
+/**
+ * 使用 XUtils 代替访问网络数据前使用的工具类，没用。
+ */
+
 public class ParseJsonResult {
     private static final String TARGET = "http://v.juhe.cn/joke/randJoke.php";
     private static final int DEF_CONN_TIMEOUT = 30000;
