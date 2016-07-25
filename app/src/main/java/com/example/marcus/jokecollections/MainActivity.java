@@ -69,6 +69,7 @@ public class MainActivity extends Activity implements MainActivityItf, SwipeRefr
 
     @Override
     public void notifyAdapter(List<PicJokes.ResultBean> resultBeanList) {
+        //接受到数据后通知 adapter 数据发生了变化，应该重新计算 getItemCount 中的数量，从而正确的显示数据。
         picJokes.addAll(resultBeanList);
         adapter.notifyDataSetChanged();
     }

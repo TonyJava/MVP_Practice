@@ -19,8 +19,8 @@ import java.util.List;
  * Created by marcus on 16/6/10.
  */
 public class DisplayListAdapter extends RecyclerView.Adapter<DisplayListAdapter.MyViewHolder> {
-    private Context context;
     List<PicJokes.ResultBean> resultBeenList;
+    private Context context;
 
     public DisplayListAdapter(List<PicJokes.ResultBean> resultBeanList) {
         this.resultBeenList = resultBeanList;
