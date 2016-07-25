@@ -45,7 +45,7 @@ public class DisplayListAdapter extends RecyclerView.Adapter<DisplayListAdapter.
 
     @Override
     public int getItemCount() {
-        return resultBeenList.size();
+        return resultBeenList == null ? 0 : resultBeenList.size();
     }
 
     static class MyViewHolder extends RecyclerView.ViewHolder {
