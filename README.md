@@ -1,1 +1,2 @@
-# Learn_ParseJson
+# 笑话大全
+## 采用聚合数据提供的笑话大全免费 API，使用 MVP 模式构建程序，结合 XUtils3 框架进行网络请求，返还 Json 数据，解析工作则使用 Gson 来完成。
