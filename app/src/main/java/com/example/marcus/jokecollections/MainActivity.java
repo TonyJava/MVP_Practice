@@ -12,6 +12,7 @@ import com.example.marcus.jokecollections.Adapters.DisplayListAdapter;
 import com.example.marcus.jokecollections.Jokes.PicJokes;
 
 import org.xutils.view.annotation.ContentView;
+import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 import java.util.ArrayList;
@@ -31,8 +32,11 @@ public class MainActivity extends Activity implements MainActivityItf, SwipeRefr
     //总得认识中介人吧？
     private PresenterItf presenterItf;
 
+    @ViewInject(R.id.display_list)
     private RecyclerView displayList;
+    @ViewInject(R.id.refresh)
     private SwipeRefreshLayout refresh;
+
     private DisplayListAdapter adapter;
 
     private List<PicJokes.ResultBean> picJokes = new ArrayList<>();
@@ -44,16 +48,12 @@ public class MainActivity extends Activity implements MainActivityItf, SwipeRefr
         x.view().inject(this);
         x.Ext.init(getApplication());
         presenterItf = new PresenterImp(this);
-        displayList = (RecyclerView) findViewById(R.id.display_list);
-        initAdapterStyle();
         adapter = new DisplayListAdapter(picJokes);
+        initAdapterStyle();
         displayList.setAdapter(adapter);
-        refresh = (SwipeRefreshLayout) findViewById(R.id.refresh);
         refresh.setOnRefreshListener(this);
-
         //load data;
         presenterItf.loadData();
-
     }
 
     public void initAdapterStyle() {
