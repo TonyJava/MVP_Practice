@@ -1,13 +1,13 @@
-package com.example.marcus.jokecollections;
+package com.example.marcus.jokecollections.Presenter;
 
-import com.example.marcus.jokecollections.Jokes.PicJokes;
+import com.example.marcus.jokecollections.Model.Data.PicJokes;
 
 import java.util.List;
 
 /**
  * Created by marcus on 16/7/25.
  */
-public interface PresenterItf {
+public interface IPresenter {
     void returnData(List<PicJokes.ResultBean> resultBeanList);
 
     void loadData();

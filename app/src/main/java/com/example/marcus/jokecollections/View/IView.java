@@ -1,13 +1,13 @@
-package com.example.marcus.jokecollections;
+package com.example.marcus.jokecollections.View;
 
-import com.example.marcus.jokecollections.Jokes.PicJokes;
+import com.example.marcus.jokecollections.Model.Data.PicJokes;
 
 import java.util.List;
 
 /**
  * Created by marcus on 16/7/25.
  */
-public interface MainActivityItf {
+public interface IView {
     void notifyAdapter(List<PicJokes.ResultBean> resultBeanList);
 
     void setFinished();
