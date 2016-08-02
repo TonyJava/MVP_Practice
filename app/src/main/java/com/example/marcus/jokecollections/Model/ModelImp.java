@@ -27,7 +27,7 @@ public class ModelImp implements IModel {
     public ModelImp() {}
 
     @Override
-    public void solveData(final IPresenter IPresenter) {
+    public void solveData(final IPresenter iPresenter) {
         Map<String, String> params = new HashMap<>();
         params.put("key", "1a8238a73e1a9c5077995da8493e3452");
         params.put("type", "pic");
@@ -45,7 +45,7 @@ public class ModelImp implements IModel {
                 PicJokes jokes = gson.fromJson(result, PicJokes.class);
                 picJokes = jokes.getResult();
                 //通过 IPresenterImp 来返回数据到 View，并通知 View 做出更改
-                IPresenter.returnData(picJokes);
+                iPresenter.returnData(picJokes);
             }
 
             @Override
@@ -60,8 +60,8 @@ public class ModelImp implements IModel {
 
             @Override
             public void onFinished() {
-                //同上注释
-                IPresenter.refreshFinished();
+                //同上注释,获取数据后关闭刷新动画
+                iPresenter.refreshFinished();
             }
         });
     }

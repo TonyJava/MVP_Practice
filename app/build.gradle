@@ -34,4 +34,8 @@ dependencies {
     provided 'com.google.dagger:dagger-compiler:2.6'
     //dagger2 中用到几个 java sdk 里的注解 @Inject，@Singleton
     provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    compile 'io.reactivex:rxjava:1.1.6'
 }
