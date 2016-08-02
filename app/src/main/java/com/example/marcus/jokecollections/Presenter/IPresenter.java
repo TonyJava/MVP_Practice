@@ -1,6 +1,6 @@
-package com.example.marcus.jokecollections.Presenter;
+package com.example.marcus.jokecollections.presenter;
 
-import com.example.marcus.jokecollections.Model.Data.PicJokes;
+import com.example.marcus.jokecollections.data.PicJokes;
 
 import java.util.List;
 

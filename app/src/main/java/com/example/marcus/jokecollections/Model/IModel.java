@@ -1,6 +1,6 @@
-package com.example.marcus.jokecollections.Model;
+package com.example.marcus.jokecollections.model;
 
-import com.example.marcus.jokecollections.Presenter.IPresenter;
+import com.example.marcus.jokecollections.presenter.IPresenter;
 
 /**
  * Created by marcus on 16/7/25.

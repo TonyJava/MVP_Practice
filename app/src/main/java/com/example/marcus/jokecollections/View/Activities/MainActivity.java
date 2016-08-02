@@ -1,4 +1,4 @@
-package com.example.marcus.jokecollections.View.Activities;
+package com.example.marcus.jokecollections.view.activities;
 
 import android.app.Activity;
 import android.graphics.Rect;
@@ -8,13 +8,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.example.marcus.jokecollections.Model.Data.PicJokes;
-import com.example.marcus.jokecollections.Presenter.Component.DaggerPresenterComponent;
-import com.example.marcus.jokecollections.Presenter.IPresenterImp;
-import com.example.marcus.jokecollections.Presenter.Module.PresenterModule;
+import com.example.marcus.jokecollections.data.PicJokes;
+import com.example.marcus.jokecollections.presenter.component.DaggerPresenterComponent;
+import com.example.marcus.jokecollections.presenter.IPresenterImp;
+import com.example.marcus.jokecollections.presenter.module.PresenterModule;
 import com.example.marcus.jokecollections.R;
-import com.example.marcus.jokecollections.View.Adapters.DisplayListAdapter;
-import com.example.marcus.jokecollections.View.IView;
+import com.example.marcus.jokecollections.view.adapters.DisplayListAdapter;
+import com.example.marcus.jokecollections.view.IView;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;

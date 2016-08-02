@@ -1,7 +1,7 @@
-package com.example.marcus.jokecollections.Model.Component;
+package com.example.marcus.jokecollections.model.component;
 
-import com.example.marcus.jokecollections.Model.Module.ModelModule;
-import com.example.marcus.jokecollections.Presenter.IPresenterImp;
+import com.example.marcus.jokecollections.model.module.ModelModule;
+import com.example.marcus.jokecollections.presenter.IPresenterImp;
 
 import dagger.Component;
 

@@ -1,4 +1,4 @@
-package com.example.marcus.jokecollections.Model.Data;
+package com.example.marcus.jokecollections.data;
 
 import java.util.List;
 

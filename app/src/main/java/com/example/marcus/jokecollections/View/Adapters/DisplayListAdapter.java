@@ -1,4 +1,4 @@
-package com.example.marcus.jokecollections.View.Adapters;
+package com.example.marcus.jokecollections.view.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.CardView;
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.marcus.jokecollections.Model.Data.PicJokes;
+import com.example.marcus.jokecollections.data.PicJokes;
 import com.example.marcus.jokecollections.R;
 import com.squareup.picasso.Picasso;
 

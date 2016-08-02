@@ -1,7 +1,7 @@
-package com.example.marcus.jokecollections.Presenter.Component;
+package com.example.marcus.jokecollections.presenter.component;
 
-import com.example.marcus.jokecollections.Presenter.Module.PresenterModule;
-import com.example.marcus.jokecollections.View.Activities.MainActivity;
+import com.example.marcus.jokecollections.presenter.module.PresenterModule;
+import com.example.marcus.jokecollections.view.activities.MainActivity;
 
 import dagger.Component;
 

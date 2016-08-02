@@ -1,6 +1,6 @@
-package com.example.marcus.jokecollections.Model.Module;
+package com.example.marcus.jokecollections.model.module;
 
-import com.example.marcus.jokecollections.Model.ModelImp;
+import com.example.marcus.jokecollections.model.ModelImp;
 
 import dagger.Module;
 import dagger.Provides;

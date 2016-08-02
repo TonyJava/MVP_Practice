@@ -1,10 +1,10 @@
-package com.example.marcus.jokecollections.Presenter;
+package com.example.marcus.jokecollections.presenter;
 
-import com.example.marcus.jokecollections.Model.Component.DaggerModelComponent;
-import com.example.marcus.jokecollections.Model.Data.PicJokes;
-import com.example.marcus.jokecollections.Model.ModelImp;
-import com.example.marcus.jokecollections.Model.Module.ModelModule;
-import com.example.marcus.jokecollections.View.Activities.MainActivity;
+import com.example.marcus.jokecollections.model.component.DaggerModelComponent;
+import com.example.marcus.jokecollections.data.PicJokes;
+import com.example.marcus.jokecollections.model.ModelImp;
+import com.example.marcus.jokecollections.model.module.ModelModule;
+import com.example.marcus.jokecollections.view.activities.MainActivity;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.example.marcus.jokecollections.Model;
+package com.example.marcus.jokecollections.model;
 
 import android.util.Log;
 
-import com.example.marcus.jokecollections.Presenter.IPresenter;
-import com.example.marcus.jokecollections.Model.Data.PicJokes;
+import com.example.marcus.jokecollections.presenter.IPresenter;
+import com.example.marcus.jokecollections.data.PicJokes;
 import com.google.gson.Gson;
 
 import org.xutils.common.Callback;

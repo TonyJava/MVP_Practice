@@ -1,6 +1,6 @@
-package com.example.marcus.jokecollections.Presenter.Module;
+package com.example.marcus.jokecollections.presenter.module;
 
-import com.example.marcus.jokecollections.View.Activities.MainActivity;
+import com.example.marcus.jokecollections.view.activities.MainActivity;
 
 import dagger.Module;
 import dagger.Provides;
